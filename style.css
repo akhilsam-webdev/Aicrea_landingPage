@@ -1,0 +1,282 @@
+@font-face {
+  font-family: hel;
+  src: url(./Helvetica.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: hel;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  
+}
+
+main {
+  width: 100%;
+  height: 99%;
+  /* background-color: black; */
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "section figure1 figure1"
+    "section figure1 figure1"
+    "button figure2 figure3"
+    "para figure2 figure3"
+    "footer figure2 figure3";
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  grid-template-rows: 60px 1fr 1fr 0.5fr 0.5fr 60px;
+  gap: 10px;
+  padding: 0 5px;
+}
+
+header {
+  grid-area: header;
+  /* background-color: crimson; */
+}
+
+section {
+  grid-area: section;
+  /* background-color: olive; */
+  border-radius: 15px;
+}
+
+section {
+  grid-area: section;
+  /* background-color: olive; */
+  border-radius: 15px;
+}
+
+.figure1 {
+  grid-area: figure1;
+  /* background-color: darkcyan; */
+  border-radius: 15px;
+}
+
+.figure2 {
+  grid-area: figure2;
+  /* background-color: darkblue; */
+  border-radius: 15px;
+}
+
+.figure3 {
+  grid-area: figure3;
+  /* background-color: darkgreen; */
+  border-radius: 15px;
+}
+
+.button {
+  grid-area: button;
+  /* background-color: darkmagenta; */
+  border-radius: 15px;
+}
+
+.para {
+  grid-area: para;
+  /* background-color: darksalmon; */
+  border-radius: 15px;
+}
+
+footer {
+  grid-area: footer;
+  /* background-color: orange; */
+  border-radius: 15px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 340px;
+   
+}
+
+.logo{
+    width: 120px;
+    height: 50px;
+    background-image: url(./logo.png);
+    background-size: contain;
+    background-position: center;
+    scale: 1.2;
+    
+}
+
+.menu {
+    /* width: 400px; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    /* width: 200px;
+    height: 50px; */
+}
+.sign button{
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+
+}
+
+.sign .bt1{
+    background: none;
+    font-weight: 500;
+}
+
+.sign .bt2{
+    background-color: #2C313E;
+    color: white;
+    font-weight: 500;
+}
+
+
+section{
+    padding-left: 50px;
+}
+h1 img{
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+section h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+section button{
+    padding: 10px 40px;
+   background: transparent;
+   border: 2px solid black;
+   border-radius: 25px;
+   text-align: center;
+
+}
+
+.b i {
+    font-size: 25px;    
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button button {
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    margin-left: 50px;
+}
+
+.button .bt1 {
+    background-color: #1E233C;
+    color: white;
+}
+
+.button .bt2{
+    color: black;
+    text-decoration: underline;
+    background: transparent;
+}
+
+.figure1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    /* overflow: hidden; */
+}
+
+.figure2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.figure3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.para {
+    padding: 25px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+.q{
+    width: 60px;
+    height: 50px;
+    background-image: url(./download.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    scale: 1.5;
+
+}
+
+.r{
+    width: 100px;
+    height: 50px;
+    background-image: url(./download\ \(1\).png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* scale: 1.5; */
+
+}
+
+.s{
+    width: 100px;
+    height: 50px;
+    background-image: url(./download\ \(2\).png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* scale: 1.5; */
+
+}
+
+.t{
+    width: 100px;
+    height: 50px;
+    background-image: url(./download\ \(3\).png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* scale: 1.5; */
+
+}
